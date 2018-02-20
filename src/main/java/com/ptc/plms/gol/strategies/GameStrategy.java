@@ -3,7 +3,7 @@ package com.ptc.plms.gol.strategies;
 import java.util.Set;
 
 import com.ptc.plms.gol.models.BaseCell;
-import com.ptc.plms.gol.oops.rules.Rule;
+import com.ptc.plms.gol.rules.Rule;
 
 /**
  * 
@@ -12,9 +12,8 @@ import com.ptc.plms.gol.oops.rules.Rule;
  */
 public interface GameStrategy<T extends BaseCell<?>> {
 
-	Set<T> findNeighbours(T cellFromCurrentGeneration, Set<T> liveCells);
+	Set<T> findNeighbours(T cellFromCurrentGeneration, Set<T> cellMatrix);
 
-	Rule<?,?>[] getRules();
+	Rule[] getRules();
 
-	void setRules(Rule<?,?>[] rules);
 }

@@ -33,4 +33,11 @@ public class StateCell extends BaseCell<Coordinate2D> {
 				this.state);
 	}
 
+	@Override
+	public String toString() {
+		return "StateCell [state=" + state + ", getCoordinates()=" + getCoordinates() + "]";
+	}
+	
+	
+
 }

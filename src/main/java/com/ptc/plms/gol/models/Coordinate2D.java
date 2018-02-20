@@ -27,4 +27,9 @@ public class Coordinate2D extends Coordinates {
 		return this.coordinates[1];
 	}
 
+	@Override
+	public String toString() {
+		return "Coordinate2D [ X=" + this.getX() + " , Y=" + this.getY() + " ]";
+	}
+
 }
